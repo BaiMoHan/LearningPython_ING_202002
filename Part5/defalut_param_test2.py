@@ -8,11 +8,11 @@
 
 
 # 定义一个打印三角形的函数，带默认值的参数必须放在最后面
-def print_triangle(char, height = 5):
-    for i in range(1,height + 1):
+def print_triangle(char, height=5):
+    for i in range(1, height + 1):
         # 先打印一排空格
         for j in range(height - 1):
-            print(' ',end='')
+            print(' ', end='')
         # 再打印一排特殊字符
         for j in range(2 * i - 1):
             print(char, end='')
@@ -21,6 +21,5 @@ def print_triangle(char, height = 5):
 
 if __name__ == '__main__':
     print_triangle('@', 6)
-    print_triangle('#',height=8)
+    print_triangle('#', height=8)
     print_triangle(char='&')
-
